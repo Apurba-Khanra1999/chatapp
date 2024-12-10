@@ -1,6 +1,5 @@
 import flet as ft
 
-
 class Message:
     def __init__(self, user_name: str, text: str, message_type: str):
         self.user_name = user_name
@@ -148,9 +147,8 @@ def main(page: ft.Page):
                     tooltip="Send message",
                     on_click=send_message_click,
                 ),
-            ]
+            ],
         ),
     )
-
 
 ft.app(target=main)
